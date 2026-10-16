@@ -1,0 +1,63 @@
+# ---------- Secrets & machine-specific config ----------
+.env
+.env.*
+!.env.example
+config.json
+servers.config.json
+config.local.*
+!config.example.json
+!servers.config.example.json
+*.local.json
+*.local.ps1
+secrets/
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+# ---------- Runtime data, logs, state ----------
+logs/
+*.log
+*.pid
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------- Dependencies ----------
+node_modules/
+
+# ---------- Build output & caches ----------
+dist/
+build/
+out/
+.vite/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+coverage/
+
+# ---------- Package manager debug logs ----------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Backups & temp ----------
+*.bak
+*.tmp
+*.swp
+*~
+
+# ---------- OS files (Windows) ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ---------- Editors ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/

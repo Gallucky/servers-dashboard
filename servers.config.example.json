@@ -1,0 +1,24 @@
+{
+    "port": 4000,
+    "allowedUsers": ["user@example.com"],
+    "servers": [
+        {
+            "id": "example-app",
+            "name": "Example App",
+            "cwd": "C:/path/to/example-app",
+            "start": "npm start",
+            "port": 4001,
+            "url": "http://localhost:4001"
+        },
+        {
+            "id": "example-script-managed",
+            "name": "Example Script-Managed Server",
+            "cwd": "C:/path/to/other-server",
+            "start": "powershell -NoProfile -ExecutionPolicy Bypass -File ./start-server.ps1",
+            "stop": "powershell -NoProfile -ExecutionPolicy Bypass -File ./stop-server.ps1",
+            "port": 4002,
+            "logFile": "C:/path/to/other-server/logs/server.log",
+            "url": "http://localhost:4002"
+        }
+    ]
+}
