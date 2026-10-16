@@ -27,7 +27,7 @@ Node.js + TypeScript (server), React + Vite (web). Built for a Windows host, sta
    ```
    npm install
    ```
-2. Create your config from the example (the real config is gitignored):
+2. Create your config from the example (the real config is and should be gitignored):
    ```
    copy servers.config.example.json servers.config.json
    ```
